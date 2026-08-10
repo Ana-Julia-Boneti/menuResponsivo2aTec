@@ -1,8 +1,25 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 header{
-    background-color: rgb(94, 94, 192);
+    background-color: rgb(35, 95, 48);
+    color: rgb(0, 0, 0);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+
+    display: flex;
+    gap: 40px;
 }
