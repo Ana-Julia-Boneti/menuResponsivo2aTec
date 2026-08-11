@@ -1,25 +1,150 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background: linear-gradient(135deg, #e8f1e8, #c8dcc8);
+min-height: 100vh;
+color: rgb(0, 0, 0);
 }
 
-body{
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/* CABEÇALHO */
+header {
+background-color: rgb(52, 126, 68);
+color: rgb(0, 0, 0);
+
+```
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+padding: 20px 40px;
+
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+```
+
 }
 
-header{
-    background-color: rgb(35, 95, 48);
-    color: rgb(0, 0, 0);
+/* TÍTULO */
+header h1 {
+font-size: 32px;
+letter-spacing: 1px;
+}
 
-    display: flex;
-    justify-content: space-between;
+/* MENU */
+nav ul {
+list-style: none;
+
+```
+display: flex;
+gap: 40px;
+```
+
+}
+
+nav a {
+color: rgb(32, 3, 3);
+text-decoration: none;
+font-weight: 900;
+font-size: 18px;
+
+```
+padding: 10px 15px;
+border-radius: 10px;
+
+transition: 0.3s;
+```
+
+}
+
+nav a:hover {
+color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+max-width: 80%;
+background-color: rgb(156, 180, 156);
+color: antiquewhite;
+
+```
+margin: 50px auto;
+padding: 45px;
+
+line-height: 2.0;
+
+display: block;
+
+border-radius: 20px;
+
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+
+border: 2px solid rgba(255, 255, 255, 0.3);
+```
+
+}
+
+/* TÍTULO PRINCIPAL */
+main h2 {
+text-align: center;
+font-size: 32px;
+margin-bottom: 15px;
+
+```
+color: white;
+
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+```
+
+}
+
+/* SUBTÍTULO */
+main h3 {
+font-size: 19px;
+font-weight: normal;
+margin-bottom: 20px;
+}
+
+/* DESTAQUE */
+main h3:first-of-type {
+text-align: center;
+font-size: 21px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+```
+header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+nav ul {
+    flex-direction: column;
     align-items: center;
+    font-size: 19px;
+    gap: 10px;
 }
 
-nav ul{
-    list-style: none;
+main {
+    max-width: 90%;
+    padding: 25px;
+    margin: 30px auto;
+}
 
-    display: flex;
-    gap: 40px;
+main h2 {
+    font-size: 26px;
+}
+
+main h3 {
+    font-size: 17px;
+}
+```
+
 }
